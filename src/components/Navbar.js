@@ -35,47 +35,33 @@ function Navbar() {
     }
 
     return (
-        <header className='container'>
 
-            <a href="/" >
-                {/* <img src={logo} alt="logo" height={80} width={80} /> */}
-               <h3>Strip.Finance</h3>
-            </a>
-
-            
-         
-            <nav className='nav' ref={Ref}>
-                 
-            {/* <input placeholder='Search' value={"search"}/> */}
-
-
-                <div>
-                    {isConnected ? (
+            <nav class="navbar navbar-light bg-warning p-3">
+                    <div class="container-fluid">
+                    <a href='/' class="navbar-brand">Strip finance</a>
+                    <form class="d-flex">
+                        <input class="form-control " type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-dark" type="submit">Search</button>
+                    </form>
+                     
+                    <div>
+               {isConnected ? (
                         <div className='wallet_btn'>
-                            <button>
+                            <button class="btn btn-dark" >
                                 <img src={ensAvatar} alt="ENS Avatar" />
                                {ensName ? `${ensName} (${String(address).substring(0, 6)})` : String(address).substring(0, 6)}
                             </button>
                         </div>
                         ) :( 
-                        <button onClick={connect}>  
+                        <button class="btn btn-dark" onClick={connect}>  
                            <FaWallet/> 
-                        {/* {walletAddress.length > 0 ? ("Connected: " + String(walletAddress).substring(0, 6) +"..." +String(walletAddress).substring(38)) : ( <span>ConnectWallet</span>)} */}
                          </button> 
                         )
                         }  
                 </div>
-               <button className="nav-btn nav-close-btn" onClick={toggleNavigation}>
-                   <FaTimes />
-                </button>
 
-            </nav>
-           
-            <button className="nav-btn" onClick={toggleNavigation}>
-                    <FaBars />
-            </button>
-      
-       </header>
+                    </div>
+                </nav>
       );
 }
 

@@ -138,4 +138,48 @@ import "../../src/components/css/Home.css"
    
     )
    }
+
+
+     //     <header className='container'>
+
+    //         <a href="/" >
+    //             {/* <img src={logo} alt="logo" height={80} width={80} /> */}
+    //            <h3>Strip.Finance</h3>
+    //         </a>
+
+            
+         
+    //         <nav className='nav' ref={Ref}>
+                 
+    //         {/* <input placeholder='Search' value={"search"}/> */}
+
+
+    //             <div>
+    //                 {isConnected ? (
+    //                     <div className='wallet_btn'>
+    //                         <button>
+    //                             <img src={ensAvatar} alt="ENS Avatar" />
+    //                            {ensName ? `${ensName} (${String(address).substring(0, 6)})` : String(address).substring(0, 6)}
+    //                         </button>
+    //                     </div>
+    //                     ) :( 
+    //                     <button onClick={connect}>  
+    //                        <FaWallet/> 
+    //                     {/* {walletAddress.length > 0 ? ("Connected: " + String(walletAddress).substring(0, 6) +"..." +String(walletAddress).substring(38)) : ( <span>ConnectWallet</span>)} */}
+    //                      </button> 
+    //                     )
+    //                     }  
+    //             </div>
+    //            <button className="nav-btn nav-close-btn" onClick={toggleNavigation}>
+    //                <FaTimes />
+    //             </button>
+
+    //         </nav>
+           
+    //         <button className="nav-btn" onClick={toggleNavigation}>
+    //                 <FaBars />
+    //         </button>
+      
+    //    </header>
+
    

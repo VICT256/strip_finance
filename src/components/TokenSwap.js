@@ -49,24 +49,42 @@ export default function TokenSwap() {
                     </div>
                 </>
     ) : (
-    <div>
-        Please connect your wallet to get started
-            {connectors.map((connector) => (
-            <button
-            disabled={!connector.ready}
-            key={connector.id}
-            onClick={() => connect({ connector })}
-            >
-            {connector.name}
-            {!connector.ready && ' (unsupported)'}
-            {isLoading &&
-            connector.id === pendingConnector?.id &&
-            ' (connecting)'}
-            </button>
-            ))}
-        
-            {error && <div>{error.message}</div>}
-            </div>)
+        <>
+        <div class="">
+        <div class="row">
+            <div class="col-4">
+          
+            </div>
+            <div class="col-4 disconnect">
+                  
+                       <h5>strip finance enables traders to seemlessly swap favourite pairs between different 
+                        decentralized exchanges like uniswap, sushiswap and 0x-Swap on the Ethereum 
+                        Network with faster transaction paying lesser transection fees.Please connect your wallet to get started</h5>  
+                            {connectors.map((connector) => (
+                            <button class=""
+                                disabled={!connector.ready}
+                                key={connector.id}
+                                onClick={() => connect({ connector })}
+                                >
+                                {connector.name}
+                                {!connector.ready && ' (unsupported)'}
+                                {isLoading &&
+                                connector.id === pendingConnector?.id &&
+                                ' (connecting)'}
+                                </button>
+                                ))}
+                            
+                                {error && <div>{error.message}</div>}
+
+                                
+                    </div>
+
+                <div class="col-4">
+            
+            </div>
+        </div>
+    </div>
+    </>)
             }
     </div>
     
