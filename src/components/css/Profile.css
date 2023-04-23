@@ -57,6 +57,8 @@
 
 .disconnect h5 {
       margin-bottom: 40px;
+      background-color: black;
+      color: white;
 }  
   .disconnect button {
     margin: 10px;

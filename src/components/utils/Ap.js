@@ -115,7 +115,7 @@ import { getWethContract, getUniContract, getPrice, runSwap } from './AlphaRoute
               balance={wethAmount} />
             <CurrencyField
               field="output"
-              tokenName="UNI"
+              tokenName="SFT"
               value={outputAmount}
               signer={signer}
               balance={uniAmount}
@@ -130,6 +130,19 @@ import { getWethContract, getUniContract, getPrice, runSwap } from './AlphaRoute
               </>
             )}
           </div>
+          <select class="form-select mt-1" aria-label="Default select example">
+              <option selected>transfer from</option>
+              <option value="1">Uniswap</option>
+              <option value="2">OX_SWAP</option>
+              <option value="3">SushiSwap</option>
+            </select>
+
+            <select class="form-select mt-1 mb-5" aria-label="Default select example">
+              <option selected>transfer to</option>
+              <option value="1">Uniswap</option>
+              <option value="2">OX_SWAP</option>
+              <option value="3">SushiSwap</option>
+            </select>
 
           <div className="swapButtonContainer">
             {isConnected() ? (

@@ -37,7 +37,35 @@ import { MdGridView } from "react-icons/md"
                             </div>
     
                             <div class="item2">
-    
+                                <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Liquid stakes</h5>
+                                            <p class="card-text"></p>
+                                            <h3>$0.00</h3>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">percentage interest</h5>
+                                            <p class="card-text"></p>
+                                            <h3>0%</h3>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                            <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Total yield farms</h5>
+                                            <p class="card-text"></p>
+                                            <h3>$0</h3>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
                             </div>
     
                         </div>

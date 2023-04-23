@@ -19,10 +19,10 @@ const symbol0 = 'WETH'
 const decimals0 = 18
 const address0 = '0xc778417e063141139fce010982780140aa0cd5ab'
 
-const name1 = 'Uniswap Token'
+const name1 = 'Srtip_finance Token'
 const symbol1 = 'UNI'
 const decimals1 = 18
-const address1 = '0x1f9840a85d5af5bf1d1762f925bdaddc4201f984'
+const address1 = '0x07634958E9227C41F3ecD3ef983b8e3717F3bE1E'
 
 const WETH = new Token(chainId, address0, decimals0, symbol0, name0)
 const UNI = new Token(chainId, address1, decimals1, symbol1, name1)

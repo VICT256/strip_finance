@@ -36,7 +36,40 @@ import { MdGridView } from "react-icons/md"
                             </div>
     
                             <div class="item2">
-    
+                            <select class="form-select mt-3" aria-label="Default select example">
+                                    <option selected>Choose Exchange</option>
+                                    <option value="1">Uniswap</option>
+                                    <option value="2">OX_SWAP</option>
+                                    <option value="3">SushiSwap</option>
+                                    </select>
+                                <select class="form-select mt-3" aria-label="Default select example">
+                                    <option selected>Transfrom from</option>
+                                    <option value="1">WETH</option>
+                                    <option value="2">SFT</option>
+                                    <option value="3">UNI</option>
+                                    </select>
+
+                                <select class="form-select mt-3" aria-label="Default select example">
+                                    <option selected>Transfer to</option>
+                                    <option value="1">WETH</option>
+                                    <option value="2">UIN</option>
+                                    <option value="3">SFT</option>
+                                </select>
+
+                                <h3 class="mt-3">Amount to withdraw</h3>
+                                    <div class="row mt-3">
+                                        
+                                        <div class="col-6">
+                                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder='Amount of ETH/WETH'  />
+                                        </div>
+                                        
+                                    </div>
+
+                                    
+                                    <div class="col-auto mt-3">
+                                                <button type="submit" class="btn btn-danger mb-3" >Withdraw</button>
+                                        </div>
+
                             </div>
     
                         </div>
