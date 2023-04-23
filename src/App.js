@@ -80,7 +80,7 @@ export default function App() {
                     <Route path="/provideliquidity"  element={<ProvideLiquidity/>}/>
                     <Route path="/tokenswap"  element={<TokenSwap/>}/>
                     <Route path="/customersupport"  element={<Help/>}/>
-                    <Route path="/withdraw"  element={<Help/>}/>
+                    <Route path="/withdraw"  element={<Withdraw/>}/>
                     <Route path="/ap"  element={<Ap/>}/>
                   </Routes>
 
