@@ -2,6 +2,8 @@ import React, {useState, useEffect} from "react"
 import {useAccount,useConnect,useDisconnect,useEnsAvatar,useEnsName,} from 'wagmi'
 import { InjectedConnector } from 'wagmi/connectors/injected'
 import "../../src/components/css/Profile.css"
+import { MdGridView } from "react-icons/md"
+// import 'bootstrap/dist/css/bootstrap.css'
 
 // import { } from "react-icons/fa"
 
@@ -25,7 +27,7 @@ import "../../src/components/css/Profile.css"
                 <>
                    <div class="grid-container">
                         <div class="item1">
-                           <h1>Dashboard</h1>
+                        <div><a href='/'><h1> <MdGridView/> Dashboard</h1> </a></div>
                           <a href="/tokenswap"><button>Token Swap</button></a>
                           <a href="/provideliquidity"><button>Provide Liquidity</button></a>
                           <a href="/withdraw"><button>Withdraw Funds</button></a>
@@ -35,10 +37,33 @@ import "../../src/components/css/Profile.css"
                         </div>
 
                         <div class="item2">
+                        <div class="container">
+                            
+                            <div class="row">
+                                    <div class="col-8">col-8</div>
+                                    <div class="col-4">
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked/>
+                                            <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+                                        </div>
 
+                                    </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-8">col-8</div>
+                                    <div class="col-4">
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
+                                            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+                                            </div>
+                                    </div>
+                            </div>
+                            </div>
                         </div>
 
                     </div>
+                    
+
                 </>
     ) :(
     <div>

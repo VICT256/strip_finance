@@ -2,9 +2,9 @@ import React from 'react';
 
 const ConfigModal = props => {
 
-    
+
   return(
-    <div className="modaly" onClick={props.onClose}>
+    <div className="modaly mt5" onClick={props.onClose}>
       <div className="modal-content" onClick={e => e.stopPropagation()}>
         <div className="modal-body">
           <h4 className="titleHeader">Transaction Settings</h4>
@@ -40,6 +40,7 @@ const ConfigModal = props => {
             <div className="col-md-3 inputFieldUnitsContainer">
               <span>minutes</span>
             </div>
+               <div><button>Apply</button></div>
           </div>
         </div>
       </div>

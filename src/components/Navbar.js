@@ -5,7 +5,7 @@ import {FaBars, FaTimes, FaWallet } from "react-icons/fa"
 import logo from "../strip_finance logo.png"
 import "../App.css"
 
-function Navbar(props) {
+function Navbar() {
                
     const { address, connector, isConnected } = useAccount()
     const { data: ensAvatar } = useEnsAvatar({ address })
@@ -37,14 +37,18 @@ function Navbar(props) {
     return (
         <header className='container'>
 
-            <a href="/" style={{marginTop:20, marginLeft:20,textDecoration:"none", display:"flex"}}>
-                <img src={logo} alt="logo" height={50} width={50} />
+            <a href="/" >
+                {/* <img src={logo} alt="logo" height={80} width={80} /> */}
                <h3>Strip.Finance</h3>
             </a>
 
+            
          
             <nav className='nav' ref={Ref}>
-        
+                 
+            {/* <input placeholder='Search' value={"search"}/> */}
+
+
                 <div>
                     {isConnected ? (
                         <div className='wallet_btn'>

@@ -1,7 +1,9 @@
+import 'bootstrap/dist/css/bootstrap.css'
 import React, {useState, useEffect} from "react"
 import {useAccount,useConnect,useDisconnect,useEnsAvatar,useEnsName,} from 'wagmi'
 import { InjectedConnector } from 'wagmi/connectors/injected'
 import "../../src/components/css/Profile.css"
+import { MdGridView } from "react-icons/md"
 
 // import { } from "react-icons/fa"
 
@@ -25,7 +27,7 @@ import "../../src/components/css/Profile.css"
                 <>
                    <div class="grid-container">
                    <div class="item1">
-                           <h1>Dashboard</h1>
+                           <div><a href='/'><h1> <MdGridView/> Dashboard</h1> </a></div>
                           <a href="/tokenswap"><button>Token Swap</button></a>
                           <a href="/provideliquidity"><button>Provide Liquidity</button></a>
                           <a href="/withdraw"><button>Withdraw Funds</button></a>
@@ -35,7 +37,36 @@ import "../../src/components/css/Profile.css"
                         </div>
 
                         <div class="item2">
-                           
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card">
+                                <div class="card-body">
+                                    <h2 class="card-title">Liquid stake</h2>
+                                    <p class="card-text"></p>
+                                     <h4> $0.00 </h4>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">interest Earning</h5>
+                                    <p class="card-text"></p>
+                                    <h4> % </h4>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Total Yield Farming</h5>
+                                    <p class="card-text"></p>
+                                    <h4> $0.00 </h4>
+
+                                </div>
+                                </div>
+                            </div>
+                            </div>
 
                         </div>
 
