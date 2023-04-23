@@ -7,3 +7,10 @@ Additionally, Strip_finance Layer 2 DEX also prides itself as a formidable tool 
 2. Help Liquidity Providers, credit unions, insurance corporations, find the best deals, earn passively and gain high yield on their saving or investment.
 
 
+Technologies used in development
+1. Bunzz code
+2. Ethers.js
+3. wagmi
+4. Goerli network
+5. React frontend
+6. Solidity 
